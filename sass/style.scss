@@ -1,0 +1,120 @@
+@use "_reset.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #8a5050;
+  width: 1024px;
+  height: 768px;
+
+  margin: 0 auto;
+}
+
+.main-visual {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin: 50px auto 30px;
+}
+
+.MV {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 50px;
+}
+.fade-in {
+  opacity: 0; /* 初めは完全に透明に */
+  transition: opacity 2s ease-in-out; /* 2秒かけて不透明度を変化させる */
+}
+
+.fade-in-on-load {
+  opacity: 1; /* 画像の読み込みが終わったら不透明に */
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.catch-copy {
+  font-size: 3em;
+  margin-bottom: 30px;
+  padding: 4px 20px;
+  border-radius: 10px;
+}
+
+.lead-text {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 50px;
+  padding: 4px 10px;
+  border-radius: 10px;
+}
+.section_color {
+  width: 60%;
+  margin: auto;
+}
+
+.color_container {
+  display: flex;
+  flex-direction: column;
+}
+#color-coordination {
+  padding: 10px;
+  font-weight: 600;
+}
+.color-1 {
+  background-color: #f1f3ce;
+  color: #000000;
+}
+.color-2 {
+  background-color: #b7b8b6;
+  color: #b7fa74;
+}
+.color-3 {
+  background-color: #2a3132;
+  color: #ffffff;
+}
+.color-4 {
+  background-color: #208000;
+  color: #eb711a;
+}
+.color-5 {
+  background-color: #4cb5f5;
+  color: #ffffff;
+}
+.color-6 {
+  background-color: #f98866;
+  color: #66f988;
+}
+.color-7 {
+  background-color: #f5e356;
+  color: #5668f5;
+}
+.color-8 {
+  background-color: #f52549;
+  color: #ffffff;
+}
+
+// @media (max-width: 1000px) {
+// }
+// @media (max-width: 599px) {
+// }
